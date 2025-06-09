@@ -48,7 +48,6 @@
   .filter-wrap-buttons ul {
     flex-direction: column;
     width: 100%;
-    gap: 10px;
     border-radius: 20px;
   }
 

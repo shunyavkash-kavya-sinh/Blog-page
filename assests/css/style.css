@@ -132,9 +132,9 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 8px;
   border: 1px solid #00000021;
-  padding: 20px;
+  padding: 8px;
   border-radius: 50px;
 }
 
@@ -196,12 +196,12 @@ body {
   position: absolute;
   color: black;
   background-color: rgba(255, 255, 255, 0.537);
-  padding: 14px;
+  padding: 10px;
   border-radius: 50px;
   top: 0;
   left: 0;
   margin: 10px;
-  font-size: 14px;
+  font-size: 12px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -310,7 +310,7 @@ body {
   gap: 5px;
   text-decoration: none;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .filter-wrap-buttons a.active {
