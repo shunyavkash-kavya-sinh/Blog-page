@@ -216,6 +216,8 @@ body {
 }
 
 .get-touch-title {
+  position: relative;
+  z-index: 2;
   color: white;
   font-size: 80px;
   text-align: center;
