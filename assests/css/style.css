@@ -292,17 +292,20 @@ body {
 }
 
 .filter-block {
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease, display 0.8s ease;
   opacity: 1;
   transform: scale(1);
-  display: block;
 }
 
-.filter-block.hidden {
-  display: none;
+.filter-block.hidden-transition {
   opacity: 0;
   transform: scale(0.8);
   pointer-events: none;
+}
+
+.filter-block.hidden {
+  opacity: 0;
+  display: none;
 }
 
 .filter-wrap-buttons a {

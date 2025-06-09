@@ -204,12 +204,18 @@
                     const blockCategory = block.querySelector('.img-title').innerText.trim();
                     if (filterValue === 'ALL' || blockCategory === filterValue) {
                         block.classList.remove('hidden');
+                        void block.offsetWidth;
+                        block.classList.remove('hidden-transition');
                     } else {
-                        block.classList.add('hidden');
+                        block.classList.add('hidden-transition');
+                        setTimeout(() => {
+                            block.classList.add('hidden');
+                        }, 500);
                     }
                 });
             });
         });
+
     </script>
 
 </body>
