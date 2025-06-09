@@ -47,7 +47,7 @@
             <div class="filter-post">
                 <div class="filter-wrap-buttons">
                     <h2 class="filter-main-title">Latest posts</h2>
-                    <ul>
+                    <!-- <ul>
                         <li>
                             <a href="javascript:void(0)" class="active">
                                 <div class="fields-icon">
@@ -80,7 +80,7 @@
                                 <span class="filter-button">Development</span>
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
 
                 <div class="fliter-wrap">
@@ -193,28 +193,28 @@
     </section>
 
     <script>
-        document.querySelectorAll('.filter-wrap-buttons a').forEach(button => {
-            button.addEventListener('click', function () {
-                const filterValue = this.querySelector('.filter-button').innerText.trim();
-                document.querySelectorAll('.filter-wrap-buttons a').forEach(btn => {
-                    btn.classList.remove('active');
-                });
-                this.classList.add('active');
-                document.querySelectorAll('.filter-block').forEach(block => {
-                    const blockCategory = block.querySelector('.img-title').innerText.trim();
-                    if (filterValue === 'ALL' || blockCategory === filterValue) {
-                        block.classList.remove('hidden');
-                        void block.offsetWidth;
-                        block.classList.remove('hidden-transition');
-                    } else {
-                        block.classList.add('hidden-transition');
-                        setTimeout(() => {
-                            block.classList.add('hidden');
-                        }, 500);
-                    }
-                });
-            });
-        });
+        // document.querySelectorAll('.filter-wrap-buttons a').forEach(button => {
+        //     button.addEventListener('click', function () {
+        //         const filterValue = this.querySelector('.filter-button').innerText.trim();
+        //         document.querySelectorAll('.filter-wrap-buttons a').forEach(btn => {
+        //             btn.classList.remove('active');
+        //         });
+        //         this.classList.add('active');
+        //         document.querySelectorAll('.filter-block').forEach(block => {
+        //             const blockCategory = block.querySelector('.img-title').innerText.trim();
+        //             if (filterValue === 'ALL' || blockCategory === filterValue) {
+        //                 block.classList.remove('hidden');
+        //                 void block.offsetWidth;
+        //                 block.classList.remove('hidden-transition');
+        //             } else {
+        //                 block.classList.add('hidden-transition');
+        //                 setTimeout(() => {
+        //                     block.classList.add('hidden');
+        //                 }, 500);
+        //             }
+        //         });
+        //     });
+        // });
     </script>
 
 </body>

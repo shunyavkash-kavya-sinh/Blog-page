@@ -1,3 +1,21 @@
+@media only screen and (max-width: 1240px) {
+  /* blog-listing sec */
+
+  .wearable-blog-col {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wearable-blog-content {
+    width: 100%;
+  }
+
+  .wearable-blog-card {
+    width: 50%;
+    position: static;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .air-img-p4 {
     left: -50%;
@@ -66,6 +84,10 @@
   .blog-main-img {
     height: 500px;
   }
+
+  .wearable-blog-card {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 557px) {
@@ -96,5 +118,38 @@
 
   .blog-main-img {
     height: 350px;
+  }
+
+  .wearable-blog-card {
+    width: 100%;
+  }
+
+  .blog-list-sec {
+    padding: 50px 0px;
+  }
+
+  .blog-list-title {
+    font-size: 30px;
+  }
+
+  .wearable-title {
+    font-size: 17px;
+  }
+
+  .wearable-blog-col .richtext p {
+    font-size: 14px;
+  }
+
+  .blog-thumbnail-image {
+    height: 500px;
+    margin-top: 20px;
+  }
+
+  .wearable-blog-col {
+    margin-top: 40px;
+  }
+
+  .profile-name {
+    font-size: 20px;
   }
 }
