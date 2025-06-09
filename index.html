@@ -18,7 +18,6 @@
 </head>
 
 <body>
-
     <section class="blog-sec">
         <div class="container">
             <div class="sliding-letter">
@@ -45,7 +44,6 @@
                     Mastering the Art of Responsive Web Design
                 </h2>
             </a>
-
             <div class="filter-post">
                 <div class="filter-wrap-buttons">
                     <h2 class="filter-main-title">Latest posts</h2>
@@ -172,7 +170,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="get-touch-wrap">
                 <h2 class="get-touch-title">
                     let’s work together
@@ -192,7 +189,6 @@
                     <img src="assests/images/section/air-img-4.png" alt="air-img">
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -200,16 +196,12 @@
         document.querySelectorAll('.filter-wrap-buttons a').forEach(button => {
             button.addEventListener('click', function () {
                 const filterValue = this.querySelector('.filter-button').innerText.trim();
-
                 document.querySelectorAll('.filter-wrap-buttons a').forEach(btn => {
                     btn.classList.remove('active');
                 });
-
                 this.classList.add('active');
-
                 document.querySelectorAll('.filter-block').forEach(block => {
                     const blockCategory = block.querySelector('.img-title').innerText.trim();
-
                     if (filterValue === 'ALL' || blockCategory === filterValue) {
                         block.classList.remove('hidden');
                     } else {
